@@ -5,7 +5,7 @@ export default function UserFeedback() {
   return (
     <section className="user-feedback">
       <div className="container mx-auto text-center">
-        <h2>We'd Love Your Feedback</h2>
+        <h2>We&aposd Love Your Feedback</h2>
         <p className="text-lg mb-12 text-gray-400">Tell us about your experience with FlockIQ and how we can improve.</p>
 
         <div className="feedback-form">
