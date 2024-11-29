@@ -13,7 +13,7 @@ export default function Footer() {
                 FQ
               </div>
               <span className="text-xl font-semibold">FlockIQ</span>
-            </a>
+            </Link>
             <p className="text-gray-400">
               Making forms smarter, insights deeper. Join us in transforming surveys for the modern age.
             </p>
