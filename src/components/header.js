@@ -35,7 +35,7 @@ export default function Header() {
           >
             FlockIQ
           </span>
-        </a>
+        </Link>
         <div className="flex gap-4 items-center">
   <a href="#features" className="text-gray-400 hover:text-white transition">
     Features
