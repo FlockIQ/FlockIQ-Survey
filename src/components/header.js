@@ -24,7 +24,7 @@ export default function Header() {
   return (
     <nav className="sticky top-0 bg-black border-b border-gray-700 py-4 z-50">
       <div className="container mx-auto flex justify-between items-center px-4">
-        <a href="/" className="flex items-center gap-2 text-white no-underline">
+        <Link href="/" className="flex items-center gap-2 text-white no-underline">
           <div className="bg-white text-black w-8 h-8 flex items-center justify-center rounded-lg font-bold">
             FQ
           </div>
