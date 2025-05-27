@@ -8,261 +8,264 @@
 
 /* Reset margin and padding */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Set body background to black */
 body {
-  background-color: #171717;  /* Black background */
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
+    background-color: #171717; /* Black background */
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
 }
 
 /* Layout container */
 .layout-container {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 /* Header Styles */
 header {
-  background-color: black; /* Black background for header */
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-  z-index: 1;
-  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* Optional subtle shadow */
+    background-color: black; /* Black background for header */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* Optional subtle shadow */
 }
 
 /* Logo in the header */
 header .logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
 }
 
 header .logo-box {
-  background: white;
-  color: black;
-  width: 32px;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 6px;
-  font-weight: bold;
+    background: white;
+    color: black;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-weight: bold;
 }
 
 /* Main body styles */
 .main-body {
-  padding: 40px;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: margin-top 0.5s ease; /* Smooth transition for separation */
+    padding: 40px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: margin-top 0.5s ease; /* Smooth transition for separation */
 }
 
 /* Optional hover effect on logo */
 header .logo:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s ease;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 
 /* Button Styles */
 .button-primary {
-  background-color: #007bff;
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: background-color 0.3s;
-  font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-weight: bold;
 }
 
 .button-primary:hover {
-  background-color: #0056b3;
+    background-color: #0056b3;
 }
 
 .button-outline {
-  border: 1px solid #888;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  color: #888;
-  text-decoration: none;
-  transition: color 0.3s;
-  font-weight: bold;
+    border: 1px solid #888;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    color: #888;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: bold;
 }
 
 .button-outline:hover {
-  color: white;
-  border-color: white;
+    color: white;
+    border-color: white;
 }
 
 .user-feedback {
-  background: linear-gradient(135deg, #050505 30%, #000 70%); /* Slightly adjusted gradient for more contrast */
-  color: white;
-  padding: 6rem 2rem; /* Adjust top/bottom padding */
-  border-top: 4px solid #63b3ed; /* Blue border on top for distinction */
-  margin-bottom: 6rem; /* Space before footer */
-  position: relative;
+    background: linear-gradient(
+        135deg,
+        #050505 30%,
+        #000 70%
+    ); /* Slightly adjusted gradient for more contrast */
+    color: white;
+    padding: 6rem 2rem; /* Adjust top/bottom padding */
+    border-top: 4px solid #63b3ed; /* Blue border on top for distinction */
+    margin-bottom: 6rem; /* Space before footer */
+    position: relative;
 }
 
 .user-feedback h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #fff;
-  margin-bottom: 1.5rem;
-  text-transform: uppercase; /* Makes the title more pronounced */
-  letter-spacing: 1px; /* Adds spacing for a more bold look */
-  text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase; /* Makes the title more pronounced */
+    letter-spacing: 1px; /* Adds spacing for a more bold look */
+    text-align: center;
 }
 
 .user-feedback p {
-  font-size: 1.25rem;
-  color: #d1d5db;
-  margin-bottom: 2rem;
-  text-align: center;
+    font-size: 1.25rem;
+    color: #d1d5db;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 /* Feedback Form Styles */
 .feedback-form {
-  background-color: #111111; /* Dark gray background for form */
-  padding: 2rem;
-  border-radius: 1rem; /* Rounded corners */
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition effect for scale and shadow */
-  margin: 0 auto;
-  max-width: 600px;
+    background-color: #111111; /* Dark gray background for form */
+    padding: 2rem;
+    border-radius: 1rem; /* Rounded corners */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition effect for scale and shadow */
+    margin: 0 auto;
+    max-width: 600px;
 }
 
 .feedback-form:hover {
-  transform: scale(1.05); /* Slight scaling on hover */
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow effect */
+    transform: scale(1.05); /* Slight scaling on hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow effect */
 }
 
 .feedback-form h3 {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-  color: #fff;
-  text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    text-align: center;
 }
 
 .feedback-form label {
-  display: block;
-  font-size: 1.125rem;
-  color: #a0aec0;
-  margin-bottom: 0.5rem;
+    display: block;
+    font-size: 1.125rem;
+    color: #a0aec0;
+    margin-bottom: 0.5rem;
 }
 
 .feedback-form input,
 .feedback-form textarea {
-  width: 100%;
-  padding: 1.25rem;
-  background-color: #111214; /* Dark gray input field */
-  color: #fff;
-  border: 2px solid #4a5568; /* Default border color */
-  border-radius: 0.375rem;
-  margin-bottom: 1.25rem;
-  font-size: 1rem;
-  transition: border-color 0.3s ease; /* Smooth transition for border color */
+    width: 100%;
+    padding: 1.25rem;
+    background-color: #111214; /* Dark gray input field */
+    color: #fff;
+    border: 2px solid #4a5568; /* Default border color */
+    border-radius: 0.375rem;
+    margin-bottom: 1.25rem;
+    font-size: 1rem;
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
 }
 
 /* Input and Textarea Focus Styles */
 .feedback-form input:focus,
 .feedback-form textarea:focus {
-  outline: none;
-  border-color: #63b3ed; /* Blue border when focused */
+    outline: none;
+    border-color: #63b3ed; /* Blue border when focused */
 }
 
 /* Button Styles */
 .feedback-form button {
-  background-color: #63b3ed; /* Blue background */
-  color: white;
-  padding: 1rem 2rem;
-  border-radius: 0.375rem;
-  border: none;
-  font-size: 1.125rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  display: block;
-  margin: 0 auto;
+    background-color: #63b3ed; /* Blue background */
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.375rem;
+    border: none;
+    font-size: 1.125rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: block;
+    margin: 0 auto;
 }
 
 /* Button Hover Styles */
 .feedback-form button:hover {
-  background-color: #b5cadd; /* Darker blue on hover */
-  transform: scale(1.05); /* Slight zoom effect */
+    background-color: #b5cadd; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight zoom effect */
 }
 .comparison-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 40px;
-  flex-wrap: wrap;
-  background-color: #f9f9f9;
-  border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+    background-color: #f9f9f9;
+    border-radius: 15px;
 }
 
 /* Individual Cards */
 .comparison-card {
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  text-align: center;
-  width: 300px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Title */
 .comparison-card h3 {
-  font-size: 1.5rem;
-  color: #333;
-  margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
 }
 
 /* Features List */
 .comparison-card ul {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 .comparison-card ul li {
-  margin: 10px 0;
-  font-size: 1rem;
-  color: #666;
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #666;
 }
 
 /* Button */
 .comparison-card button {
-  background-color: #0070f3;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
+    background-color: #0070f3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
 }
 
 .comparison-card button:hover {
-  background-color: #0056b3;
+    background-color: #0056b3;
 }
 
 /* Hover Effects for Cards */
 .comparison-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
